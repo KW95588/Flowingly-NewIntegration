@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flowingly-NewIntegration", "Flowingly-NewIntegration\Flowingly-NewIntegration.csproj", "{93D595DF-70AF-432A-8BB0-AA5358031963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flowingly_NewIntegration.Tests", "Flowingly_NewIntegration.Tests\Flowingly_NewIntegration.Tests.csproj", "{36622947-8B18-4408-B5C6-407B71D8E25E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93D595DF-70AF-432A-8BB0-AA5358031963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D595DF-70AF-432A-8BB0-AA5358031963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D595DF-70AF-432A-8BB0-AA5358031963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D595DF-70AF-432A-8BB0-AA5358031963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36622947-8B18-4408-B5C6-407B71D8E25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36622947-8B18-4408-B5C6-407B71D8E25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36622947-8B18-4408-B5C6-407B71D8E25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36622947-8B18-4408-B5C6-407B71D8E25E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {503603E2-F561-4B8D-9EFD-9E8692F2C2DE}
+	EndGlobalSection
+EndGlobal

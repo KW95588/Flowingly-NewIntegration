@@ -1,0 +1,6 @@
+@Flowingly_NewIntegration_HostAddress = http://localhost:5194
+
+GET {{Flowingly_NewIntegration_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
