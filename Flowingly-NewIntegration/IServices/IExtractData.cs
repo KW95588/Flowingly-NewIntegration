@@ -7,5 +7,6 @@ namespace Flowingly_NewIntegration.IServices
     public interface IExtractData
     {
         Task<OutputData[]> ExtractAsync(string input, decimal taxRate);
+        Task<string> ExtractDataFromTags(string input, decimal taxRate);
     }
 }

@@ -45,5 +45,33 @@ namespace Flowingly_NewIntegration.Controllers
             }
             
         }
+
+        [HttpPost("importData")]
+        public async Task<IActionResult> ImportData([FromBody] Data payload)
+        {
+            string json = System.Text.Json.JsonSerializer.Serialize(payload);
+            if (string.IsNullOrWhiteSpace(payload.Message))
+            {
+
+                return BadRequest(new { success = false, message = "Payload is required." });
+            }
+
+            try
+            {
+                var output = await _extractData.ExtractDataFromTags(payload.Message, (decimal)ProjectConstants.TaxRate);
+                return Ok(output);
+
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
+            }
+
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error message");
+            }
+
+        }
     }
 }
